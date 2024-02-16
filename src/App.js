@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import React, { useEffect, useState } from 'react';
 import Post from './Post';
+import NewPost from './NewPost';
 
 const BASE_URL = 'http://localhost:8000/'
 
@@ -41,6 +42,9 @@ function App() {
             <Post post={post} />
           ))
         }
+      </div>
+      <div className='newpost'>
+          <NewPost />
       </div>
     </div>
   );
